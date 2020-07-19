@@ -28,7 +28,7 @@ WHERE (e.birth_date BETWEEN '1952-01-01' AND '1955-12-31')
 * After realizing the table had duplicates because some employees had had more than one job title. I used partioning to filter the data table so that only the most current job titles were show for current employees via the from_date. Here I originally had my from_date from the departments table but realized that it duplicated the date for every title. I think added the from_date from the titles table to get a unique date for each title. This created the employee_retirement_filtered. 
 * To count the employees by department I used the Count function on the employee_retirment_filtered table and put them into the employee_eligible_for_retirment_count_title. Total employees by department elgible for retirment are seen below :
 ![Employees Eligible for Retirement by Title](Employeeretirementbytitle.png)
-# Employees eleigble for mentoring program
+# Employees eligible for mentoring program
 * I created a table utlizing a select statement and two joins as seen below : 
 * --Challenge Tech Analysis 2
 --Select employees for mentoring program 
@@ -47,7 +47,7 @@ ON (e.emp_no = de.emp_no)
 WHERE (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 		AND (de.to_date = '9999-01-01');
 		
-* I then filtered for duplicates creating the table mentoring_employees_filetered by from_date originall pulled from the titles table. 
+* I then filtered for duplicates creating the table mentoring_employees_filetered by from_date original pulled from the titles table. 
 * Count utilizing the mentoring_employees_filetered table and created the mentoring_employees_count table with the results below: 
 ![Employees Eligible for Mentoring Program by Title ](Employeementorbytitle.png)
 
