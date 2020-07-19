@@ -1,5 +1,5 @@
 # Pewlett-Hackard-Analysis :
-* Identify current employees born between 1952-1955 and hired in 1985 that are eligible for retirement and sum by title. 
+* Identify current employees born between 1952-1955 and hired between 1985-1988 that are eligible for retirement and sum by title. 
 * Identify current employees and sum by title.
 * Identify current employees eligible for mentoring prgram born between January 1, 1965 and December 31, 1965. 
 * See the ERD below for the file structure : 
@@ -25,6 +25,6 @@ INNER JOIN titles as ti
 WHERE (e.birth_date BETWEEN '1952-01-01' AND '1955-12-31')
 		AND (hire_date BETWEEN '1985-01-01' AND '1985-12-31')
 		AND (de.to_date = '9999-01-01');
-* After realizing the table had duplicates because some employees had had more than one job title. I used partioning to filter the data table so that only the most current job titles were show for current employees. I also removed the to_date from the table. This created the employee_retirement_filtered. 
+* After realizing the table had duplicates because some employees had had more than one job title. I used partioning to filter the data table so that only the most current job titles were show for current employees via the from_date. Here I originally had my from_date from the departments table but realized that it duplicated the date for every title. I think added the from_date from the titles table to get a unique date for each title. This created the employee_retirement_filtered. 
 * To count the employees by department I used the Count function on the employee_retirment_filtered table and put them into the employee_eligible_for_retirment_count_title. Total employees by department elgible for retirment are seen below :
-![Employees Eligible for Retirement by Title](EmployeeDB.png)
+![Employees Eligible for Retirement by Title](Employeeretirementbytitle.png)
