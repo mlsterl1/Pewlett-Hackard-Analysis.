@@ -48,5 +48,10 @@ WHERE (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 		AND (de.to_date = '9999-01-01');
 		
 * I then filtered for duplicates creating the table mentoring_employees_filetered by from_date originall pulled from the titles table. 
-* Count utilizing the mentoring_employees_filetered table and created the mentoring_employees_count tablea with the reesults below: 
-![Employees Eligible for Mentoring Program by Title ](Employeeretirementbytitle.png)
+* Count utilizing the mentoring_employees_filetered table and created the mentoring_employees_count table with the results below: 
+![Employees Eligible for Mentoring Program by Title ](Employeementorbytitle.png)
+
+## Summary 
+* There are currently 33,118 which represents about 14% of the employment population. Pewlett Hackard will need to formulate a plan to recruit, hire and train new staff to replace current staff and/or find efficiences in the current staffing population.
+* The total number of employees eligbile for the mentoring program is 1549.That is less than 1% of the total staff population. Pewlett Hackard may want to consider expanding criteria for mentoring program to reflect a population similar to that of the retiring population to ensure adequately trained staff to replace retirees. 
+
