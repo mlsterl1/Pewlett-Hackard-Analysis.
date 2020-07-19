@@ -5,8 +5,8 @@
 * See the ERD below for the file structure : 
 ![Pewlett Hackard ERD](EmployeeDB.png)
 ## Methodology
-# Idneitfy employees eligible for retirement/current employees sum by title  
-* To solve for current employees eligible for retirement I created a table using SELECT and joined the employees, dept_emp, titles and salaries. I then utlized the where and and statement to filter for date of birth between 1952-1955 , AND for hire date and only current employees utlizing a to_date = 9999-01-01. This created the employee_retirement table
+# Identify employees eligible for retirement/current employees sum by title  
+* To solve for current employees eligible for retirement I created a table using SELECT and joined the employees, dept_emp, titles and salaries. I then utlized the WHERE and AND statement to filter for date of birth between 1952-1955 , AND for hire date and only current employees utlizing a to_date = 9999-01-01. This created the employee_retirement table
 * SELECT e.emp_no,
 e.first_name,
 e.last_name,
