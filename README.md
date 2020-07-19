@@ -3,4 +3,4 @@
 * Identify current employees and sum by title.
 * Identify current employees eligible for mentoring prgram born between January 1, 1965 and December 31, 1965. 
 * See the ERD below for the file structure : 
-[Pewlett Hackard Data](http://google.com)
+![Pewlett Hackard ERD]()
