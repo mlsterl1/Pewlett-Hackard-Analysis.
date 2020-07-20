@@ -296,7 +296,7 @@ e.first_name,
 e.last_name,
 s.salary,
 de.to_date,
-de.from_date,
+ti.from_date,
 ti.title
 INTO current_employees
 FROM employees as e
