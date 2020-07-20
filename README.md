@@ -28,6 +28,8 @@ WHERE (e.birth_date BETWEEN '1952-01-01' AND '1955-12-31')
 * After realizing the table had duplicates because some employees had had more than one job title. I used partioning to filter the data table so that only the most current job titles were show for current employees via the from_date. Here I originally had my from_date from the departments table but realized that it duplicated the date for every title. I think added the from_date from the titles table to get a unique date for each title. This created the employee_retirement_filtered. 
 * To count the employees by department I used the Count function on the employee_retirment_filtered table and put them into the employee_eligible_for_retirment_count_title. Total employees by department elgible for retirment are seen below :
 ![Employees Eligible for Retirement by Title](Employeeretirementbytitle.png)
+* Identified the current employees by title and filtered for duplicates and the summed by title as seen below using.I used similar methodolgy as above but did not filter by hire date or birth date and filtered for only active employees and removed duplicates based on from_date of title:
+![Current Employees by Title](Employeecurrentbytitle.png)	
 # Employees eligible for mentoring program
 * I created a table utlizing a select statement and two joins as seen below : 
 * --Challenge Tech Analysis 2
